@@ -1,7 +1,7 @@
 # ToDoListTasks
 
 ## Set up the project
-- [ ] Initialize a new project with npm.
+- [x] Initialize a new project with npm.
 - [ ] Install necessary dependencies (axios, pg, nodemon, etc.).
 - [ ] Set up the server file with Node.js.
 

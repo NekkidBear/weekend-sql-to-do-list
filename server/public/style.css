@@ -21,7 +21,7 @@ table {
 thead th {
     background-color: var(--80sPurple-custom);
     color: var(--80sYellow-custom);
-    border: 2 px solid var(--80sNeonGreen-custom);
+    border: 3 px solid var(--80sNeonGreen-custom);
 }
 
 .completed td{

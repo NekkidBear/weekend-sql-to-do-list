@@ -10,7 +10,7 @@
     background-color: var(--80sRobinsEgg-custom);
     color: black;
     text-align: center;
-    font-family: "Open-Dyslexic", "Streamster", "Comic Sans", "Arial", sans-serif  ;
+    font-family: "Open-Dyslexic", "Comic Sans", "Arial", sans-serif  ;
     flex: auto
 }
 
@@ -36,7 +36,6 @@ tbody tr td{
 h1 {
     background-color: var(--80sPurple-custom);
     color: var(--80sNeonGreen-custom);
-    font: "Streamster";
 }
 
 h2 {

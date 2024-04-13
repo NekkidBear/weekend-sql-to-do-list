@@ -3,10 +3,10 @@ console.log('JS is sourced!');
 function getAndRenderTodoList(){
     axios({
         method: "GET",
-        URL: "/todos"
+        url: "/todos"
     })
     .then(response =>{
-        let taskList = response.body;
+        let taskList = response.data;
         let tableLocation = document.getElementById("taskListBody")
         for (let task of taskList){
             tableLocation.innerHTML = `

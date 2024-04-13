@@ -10,19 +10,19 @@
 - [x] Run the queries in `database.sql` to create a `todos` table and populate it with initial data.
 
 ## Create the front-end
-- [ ] Set up the HTML structure for the to-do list app.
-- [ ] Create an input field for the user to enter a new to-do item.
-- [ ] Create a submit button for the user to add the new to-do item.
-- [ ] Create a container to display the to-do items.
+- [x] Set up the HTML structure for the to-do list app.
+- [x] Create an input field for the user to enter a new to-do item.
+- [x] Create a submit button for the user to add the new to-do item.
+- [x] Create a container to display the to-do items.
 
 ## Implement the CRUD operations
 - [x] Create a route to get all to-do items from the database.
-- [ ] Create a route to add a new to-do item to the database.
-- [ ] Create a route to update a to-do item's `isComplete` status in the database.
+- [x] Create a route to add a new to-do item to the database.
+- [x] Create a route to update a to-do item's `isComplete` status in the database.
 - [x] Create a route to delete a to-do item from the database.
 
 ## Connect the front-end to the server
-- [ ] Use axios to get all to-do items from the server and display them on the page.
+- [x] Use axios to get all to-do items from the server and display them on the page.
 - [ ] Use axios to send a new to-do item to the server when the user submits the form.
 - [ ] Use axios to send a request to the server to update a to-do item's `isComplete` status when the user clicks the 'Complete' button.
 - [ ] Use axios to send a request to the server to delete a to-do item when the user clicks the 'Delete' button.

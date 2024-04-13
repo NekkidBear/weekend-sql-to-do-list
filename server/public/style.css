@@ -11,7 +11,15 @@
     color: black;
     text-align: center;
     font-family: "Open-Dyslexic", "Comic Sans", "Arial", sans-serif  ;
-    flex: auto
+    flex: auto;
+}
+body {
+    background-image: url('./images/5794037.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
 }
 
 table {
@@ -30,18 +38,26 @@ thead th {
 tbody tr td{
     border: 2px solid var(--80sPurple-custom);
     background-color: var(--80sYellow-custom);
-    padding: 5px
+    padding: 5px;
 }
 
-h1 {
+h1, h2 {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
     background-color: var(--80sPurple-custom);
     color: var(--80sNeonGreen-custom);
+    border: 6px solid var(--80sYellow-custom);
+    border-radius: 50%;
+}
+h1 {
+    font-size: 5em;
 }
 
 h2 {
-    background-color: var(--80sPurple-custom);
-    color: var(--80sNeonGreen-custom);
+    font-size: 3em;
 }
+
 section {
     background-color: var(--80sNeonGreen-custom);
 }

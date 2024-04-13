@@ -34,3 +34,6 @@ Run `npm test` to run the test suite.
 ## License
 
 [MIT](LICENSE)
+
+## Background Image
+The background image is a free licensed image by Freepik. www.freepik.com

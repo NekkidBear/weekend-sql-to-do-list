@@ -2,12 +2,12 @@
 
 ## Set up the project
 - [x] Initialize a new project with npm.
-- [ ] Install necessary dependencies (axios, pg, nodemon, etc.).
-- [ ] Set up the server file with Node.js.
+- [x] Install necessary dependencies (axios, pg, nodemon, etc.).
+- [x] Set up the server file with Node.js.
 
 ## Create the database
-- [ ] Create a new database named `weekend-to-do-app`.
-- [ ] Run the queries in `database.sql` to create a `todos` table and populate it with initial data.
+- [x] Create a new database named `weekend-to-do-app`.
+- [x] Run the queries in `database.sql` to create a `todos` table and populate it with initial data.
 
 ## Create the front-end
 - [ ] Set up the HTML structure for the to-do list app.
@@ -16,10 +16,10 @@
 - [ ] Create a container to display the to-do items.
 
 ## Implement the CRUD operations
-- [ ] Create a route to get all to-do items from the database.
+- [x] Create a route to get all to-do items from the database.
 - [ ] Create a route to add a new to-do item to the database.
 - [ ] Create a route to update a to-do item's `isComplete` status in the database.
-- [ ] Create a route to delete a to-do item from the database.
+- [x] Create a route to delete a to-do item from the database.
 
 ## Connect the front-end to the server
 - [ ] Use axios to get all to-do items from the server and display them on the page.

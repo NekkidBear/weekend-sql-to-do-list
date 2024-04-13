@@ -2,9 +2,7 @@
 
 ## Description
 
-This is a simple to-do list application built with Node.js, Express, and PostgreSQL. The application allows users to add tasks to a list, mark tasks as complete, and delete tasks from the list.
-
-The purpose of this project was to create a full-stack application using the technologies mentioned above. The application demonstrates the ability to create server routes to handle HTTP requests, interact with a PostgreSQL database to create, read, update, and delete records, and dynamically update the DOM on the client side based on user interaction and server responses.
+This is a simple to-do list application built with Node.js, Express, and PostgreSQL. The application allows users to add tasks to a list, mark tasks as complete, and delete tasks from the list. The application demonstrates the ability to create server routes to handle HTTP requests, interact with a PostgreSQL database to create, read, update, and delete records, and dynamically update the DOM on the client side based on user interaction and server responses.
 
 ## Installation
 

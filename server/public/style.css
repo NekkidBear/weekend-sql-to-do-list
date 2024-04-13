@@ -5,3 +5,12 @@
     --80sNeonGreen-custom: #01eaa9;
     --80sPurple-custom: #9e00b2;
 }
+
+.completed td{
+    text-decoration: line-through;
+}
+.completed .markCompleteBtn {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}

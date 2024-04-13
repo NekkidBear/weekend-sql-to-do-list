@@ -5,6 +5,12 @@
     --80sNeonGreen-custom: #01eaa9;
     --80sPurple-custom: #9e00b2;
 }
+* {
+    background-color: var(--80sRobinsEgg-custom);
+    color: black;
+    text-align: center;
+    font-family: "Streamster", "Comic Sans", "Arial", sans-serif  ;
+}
 
 .completed td{
     text-decoration: line-through;

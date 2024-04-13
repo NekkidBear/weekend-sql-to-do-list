@@ -33,6 +33,7 @@ function getAndRenderTodoList(){
 
 /** This function will add a new To Do item to the database and trigger a DOM refresh */
 function addNewTask(event){
+    event.preventDefault();
     let taskText = document.getElementById("taskTextInput");
     let isComplete = document.getElementById("isCompleteInput");
     let newTodo = {

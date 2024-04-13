@@ -12,6 +12,21 @@
   <header>
     <h1>SQL TO-DO List</h1>
   </header>
+  <section>
+    <h2>Add a new task</h2>
+    <form>
+      <input id = "taskText" 
+        data-testid="toDoTextInput"
+        placeholder = "task"
+        type = text>
+        <label for = "isComplete">Is it Completed?</label>
+      <select id = "isComplete">
+        <option value = "true">Yes</option>
+        <option value = "false">No</option>
+      </select>
+      <button data-testid="submitButton" id = submit onclick = "addNewTask()">Add Task</button>
+    </form>
+  </section>
   <table>
     <thead>
       <th>Task</th>

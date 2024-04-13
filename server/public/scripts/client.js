@@ -16,11 +16,11 @@ function getAndRenderTodoList(){
                 isComplete = "In Progress"
             }
             tableLocation.innerHTML += `
-                <tr>
+                <tr data-testid="toDoItem">
                     <td>${task.text}</td>
                     <td>${isComplete}</td>
-                    <td><button class ="markCompleteBtn" onclick = "markComplete(${task.id}) role = "button" aria-label = "mark task as complete">✅</button></td>
-                    <td><button class = "deleteItemBtn" onclick = "deleteItem(${task.id}) role = "button" aria-label = "delete task">❌</button></td>
+                    <td><button data-testid="completeButton" class ="markCompleteBtn" onclick = "markComplete(${task.id}) role = "button" aria-label = "mark task as complete">✅</button></td>
+                    <td><button data-testid="deleteButton" class = "deleteItemBtn" onclick = "deleteItem(${task.id}) role = "button" aria-label = "delete task">❌</button></td>
                 </tr>`
         }
     })

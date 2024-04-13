@@ -4,12 +4,14 @@
     --80sHotPink-custom: #f540c1;
     --80sNeonGreen-custom: #01eaa9;
     --80sPurple-custom: #9e00b2;
+    --80sLighterHotPink: hsl(314, 66%, 78%);
 }
 * {
     background-color: var(--80sRobinsEgg-custom);
     color: black;
     text-align: center;
     font-family: "Open-Dyslexic", "Streamster", "Comic Sans", "Arial", sans-serif  ;
+    flex: auto
 }
 
 table {
@@ -22,8 +24,55 @@ thead th {
     background-color: var(--80sPurple-custom);
     color: var(--80sYellow-custom);
     border: 3 px solid var(--80sNeonGreen-custom);
+    padding: 5px;
 }
 
+tbody tr td{
+    border: 2px solid var(--80sPurple-custom);
+    background-color: var(--80sYellow-custom);
+    padding: 5px
+}
+
+h1 {
+    background-color: var(--80sPurple-custom);
+    color: var(--80sNeonGreen-custom);
+    font: "Streamster";
+}
+
+h2 {
+    background-color: var(--80sPurple-custom);
+    color: var(--80sNeonGreen-custom);
+}
+section {
+    background-color: var(--80sNeonGreen-custom);
+}
+
+form{
+    background-color: var(--80sNeonGreen-custom);
+    color: var(--80sHotPink-custom)
+}
+
+form label{
+    background-color: var(--80sNeonGreen-custom);
+    color: var(--80sHotPink-custom);
+    line-height: 150%;
+}
+
+form input{
+    background-color: var(--80sLighterHotPink);
+    color: black;
+    border: 1px solid var(--80sPurple-custom);
+}
+
+form select{
+    border: 1px solid var(--80sPurple-custom);
+    background-color: var(--80sLighterHotPink);
+}
+
+button {
+    background-color: var(--80sPurple-custom);
+    color: var(--80sYellow-custom);
+}
 .completed td{
     text-decoration: line-through;
 }

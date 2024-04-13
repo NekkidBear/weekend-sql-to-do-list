@@ -54,8 +54,10 @@ form{
 
 form label{
     background-color: var(--80sNeonGreen-custom);
-    color: var(--80sHotPink-custom);
+    color: var(--80sPurple-custom);
     line-height: 150%;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 form input{

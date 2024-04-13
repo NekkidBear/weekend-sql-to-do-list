@@ -8,19 +8,14 @@ function getAndRenderTodoList(){
     })
     .then(response =>{
         let taskList = response.data;
-        let isComplete = ""
         let tableLocation = document.getElementById("taskListBody")
         tableLocation.innerHTML = ""
         for (let task of taskList){
-            if (task.isComplete === true){
-                isComplete = "Completed"
-            } else {
-                isComplete = "In Progress"
-            }
+            let rowClass = task.isComplete ? "completed" : ""
             tableLocation.innerHTML += `
-                <tr data-testid="toDoItem">
+                <tr data-testid="toDoItem" class="${rowClass}">
                     <td>${task.text}</td>
-                    <td>${isComplete}</td>
+                    <td>${task.isComplete ? "Completed": "In Progress"}</td>
                     <td><button data-testid="completeButton" class ="markCompleteBtn" onclick = "markComplete(${task.id})" role = "button" aria-label = "mark task as complete">✅</button></td>
                     <td><button data-testid="deleteButton" class = "deleteItemBtn" onclick = "deleteItem(${task.id})" role = "button" aria-label = "delete task">❌</button></td>
                 </tr>`
@@ -64,14 +59,35 @@ function addNewTask(event){
 /** This function will update the completion status of a task and refresh the DOM. 
  * The completed task will have a css class applied to visually indicate the item is complete */
 function markComplete(id){
-    //todo implement PUT call to update the task by ID
-    //todo DON'T FORGET TO ADD THE CSS CLASS!
+    let idToUpdate = id;
+    axios({
+        method: "PUT",
+        url: `/todos/${idToUpdate}`,
+        data: {id}
+    })
+    .then(response => {
+       getAndRenderTodoList();
+    })
+    .catch(error =>{
+        console.log("Error updating status: ", error);
+    })
 }
 /** END markComplete */
 
 /**This function will delete the selected task */
 function deleteItem(id){
-    //todo implement delete call 
+    let idToDelete = id;
+    axios({
+        method: "DELETE",
+        url: `/todos/${idToDelete}`,
+    })
+    .then(response => {
+        getAndRenderTodoList();
+    })
+    .catch(error => {
+        console.log("Error deleting item: ", error);
+    })
 }
+/** End deleteItem */
 
 getAndRenderTodoList()

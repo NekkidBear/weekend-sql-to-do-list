@@ -23,9 +23,9 @@
 
 ## Connect the front-end to the server
 - [x] Use axios to get all to-do items from the server and display them on the page.
-- [ ] Use axios to send a new to-do item to the server when the user submits the form.
-- [ ] Use axios to send a request to the server to update a to-do item's `isComplete` status when the user clicks the 'Complete' button.
-- [ ] Use axios to send a request to the server to delete a to-do item when the user clicks the 'Delete' button.
+- [x] Use axios to send a new to-do item to the server when the user submits the form.
+- [x] Use axios to send a request to the server to update a to-do item's `isComplete` status when the user clicks the 'Complete' button.
+- [x] Use axios to send a request to the server to delete a to-do item when the user clicks the 'Delete' button.
 
 ## Update the DOM
 - [ ] When a new to-do item is added, update the DOM to display the new item.

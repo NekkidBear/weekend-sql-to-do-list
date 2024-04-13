@@ -15,19 +15,19 @@
     <section>
       <h2>Add a new task</h2>
       <form>
-        <label for="taskText">New ToDo Task</label>
+        <label for="taskTextInput">New ToDo Task</label>
         <input
-          id="taskText"
+          id="taskTextInput"
           data-testid="toDoTextInput"
           placeholder="task"
           type="text"
         />
-        <label for="isComplete">Is it Completed?</label>
-        <select id="isComplete">
+        <label for="isCompleteInput">Is it Completed?</label>
+        <select id="isCompleteInput">
           <option value="false">No</option>
           <option value="true">Yes</option>
         </select>
-        <button data-testid="submitButton" id="submit" onclick="addNewTask()">
+        <button data-testid="submitButton" id="submit" onclick="addNewTask(event)">
           Add Task
         </button>
       </form>

@@ -1,5 +1,6 @@
 console.log('JS is sourced!');
 
+/** This function gets the current list of To Do items from the database and renders them on the DOM */
 function getAndRenderTodoList(){
     axios({
         method: "GET",
@@ -27,6 +28,18 @@ function getAndRenderTodoList(){
     .catch(error => {
         console.error('error fetching todos:', error);
     });
+}
+/** END getAndRenderTools */
+
+/** This function will add a new To Do item to the database and trigger a DOM refresh */
+function addNewTask(event){
+    let taskText = document.getElementById("taskTextInput");
+    let isComplete = document.getElementById("isCompleteInput");
+    let newTodo = {
+        text: taskText, 
+        isComplete: isComplete
+    }
+    console.log ("New ToDo: ", newTodo);
 }
 
 getAndRenderTodoList()

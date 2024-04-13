@@ -9,7 +9,19 @@
     background-color: var(--80sRobinsEgg-custom);
     color: black;
     text-align: center;
-    font-family: "Streamster", "Comic Sans", "Arial", sans-serif  ;
+    font-family: "Open-Dyslexic", "Streamster", "Comic Sans", "Arial", sans-serif  ;
+}
+
+table {
+    border: 4px solid var(--80sPurple-custom);
+    border-collapse: collapse;
+    margin: auto;
+}
+
+thead th {
+    background-color: var(--80sPurple-custom);
+    color: var(--80sYellow-custom);
+    border: 2 px solid var(--80sNeonGreen-custom);
 }
 
 .completed td{

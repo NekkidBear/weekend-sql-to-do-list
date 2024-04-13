@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="./scripts/axios.js"></script>
-  <script src="./scripts/client.js"></script>
-  <title>SQL TO-DO List</title>
-</head>
-<body>
-  <header>
-    <h1>SQL TO-DO List</h1>
-  </header>
-  <section>
-    <h2>Add a new task</h2>
-    <form>
-      <label for = "taskText">New ToDo Task</label>
-      <input id = "taskText" 
-        data-testid="toDoTextInput"
-        placeholder = "task"
-        type = text>
-        <label for = "isComplete">Is it Completed?</label>
-      <select id = "isComplete">
-        <option value = "true">Yes</option>
-        <option value = "false">No</option>
-      </select>
-      <button data-testid="submitButton" id = submit onclick = "addNewTask()">Add Task</button>
-    </form>
-  </section>
-  <table>
-    <thead>
-      <th>Task</th>
-      <th>Mark Complete</th>
-      <th>Delete item</th>
-    </thead>
-    <tbody>
-      <!-- TODO - update table -->
-    </tbody>
-  </table>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/axios.js"></script>
+    <script src="./scripts/client.js"></script>
+    <title>SQL TO-DO List</title>
+  </head>
+  <body>
+    <header>
+      <h1>SQL TO-DO List</h1>
+    </header>
+    <section>
+      <h2>Add a new task</h2>
+      <form>
+        <label for="taskText">New ToDo Task</label>
+        <input
+          id="taskText"
+          data-testid="toDoTextInput"
+          placeholder="task"
+          type="text"
+        />
+        <label for="isComplete">Is it Completed?</label>
+        <select id="isComplete">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <button data-testid="submitButton" id="submit" onclick="addNewTask()">
+          Add Task
+        </button>
+      </form>
+    </section>
+    <h2>Current Tasks</h2>
+    <table>
+      <thead>
+        <th>Task</th>
+        <th>Mark Complete</th>
+        <th>Delete item</th>
+      </thead>
+      <tbody>
+        <!-- TODO - update table -->
+      </tbody>
+    </table>
+  </body>
 </html>

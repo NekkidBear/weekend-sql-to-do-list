@@ -48,6 +48,8 @@ function addNewTask(event){
     .then(response => {
         console.log("New Todo added: ", response.data);
         //update the DOM with the new data
+        taskText.value = "";
+        isComplete = false;
         getAndRenderTodoList();
     })
     .catch(error => {
